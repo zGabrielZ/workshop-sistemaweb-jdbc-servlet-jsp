@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    border-top: 1px solid transparent;
+    padding-bottom: 10px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 2px red; 
+}
+
+#main{
+    width: 50%;
+    margin: auto;
+   
+}
+
+#consulta{
+    position: relative;
+    overflow: auto;
+    margin-top: 30px;
+}
+
+#consulta p{
+    width:28%;
+    margin-left: 80px;
+}
+
+#consulta a{
+    text-decoration: none;
+    color: black;
+}
+
+#consulta a:hover{
+    color: red;
+}
+
+#consulta .enviar{
+    position: absolute;
+    top: 22px;
+    left: 480px
+}
+
+#consulta .procurar{
+    position: absolute;
+    top: 22px;
+    left: 300px;
+}
+
+caption{
+    margin-bottom: 10px;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.aviso h2{
+    text-align: center;
+    color: red;
+}

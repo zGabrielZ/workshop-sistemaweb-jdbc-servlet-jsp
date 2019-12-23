@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #C0C0C0;
+}
+
+fieldset{
+    margin: 100px auto;
+    width: 250px;
+}
+
+fieldset h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.formLogin{
+    margin: auto;
+}
+
+#usuario,#senha,.btn{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.btn{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.aviso h2{
+    text-align: center;
+    color: red;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.formLogin table td{
+    padding: 10px;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+}   
+
+
+
+

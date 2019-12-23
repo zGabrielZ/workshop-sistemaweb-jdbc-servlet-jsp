@@ -1,0 +1,17 @@
+create database cadastro;
+
+create table login(
+idLogin int not null auto_increment,
+usuarioLogin varchar(30) not null,
+senhaLogin varchar(30) not null,
+primary key (idLogin)
+);
+
+create table contato(
+idContato int not null auto_increment,
+nomeContato varchar(30) not null,
+sobrenomeContato varchar(30) not null,
+telefoneContato int not null,
+emailContato varchar(30) not null,
+primary key (idContato)
+);

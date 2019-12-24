@@ -9,6 +9,7 @@ header{
     background-color: black;
     border-top: 1px solid transparent;
     padding-bottom: 10px;
+    
 }
 
 header h1{
@@ -18,9 +19,8 @@ header h1{
 }
 
 #main{
-    width: 50%;
+    width: 80%;
     margin: auto;
-   
 }
 
 #consulta{

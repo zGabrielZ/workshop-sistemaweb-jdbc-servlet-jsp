@@ -11,7 +11,7 @@
 <meta name="author" content="Gabriel">
 <meta name="description" content="projeto web">
 <meta name="keywords" content="html5,jsp,servlet,java,jdbc">
-<link rel="stylesheet" href="paginas/css/estilo-cadastrar-contato.css" >
+<link rel="stylesheet" href="paginas/css/estilo-cadastro-contato.css" >
 </head>
 <body>
 	 <div id="contato">

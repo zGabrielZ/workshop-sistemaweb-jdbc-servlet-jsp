@@ -1,4 +1,6 @@
 @charset "ISO-8859-1";
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #C0C0C0;
@@ -7,6 +9,8 @@ body{
 fieldset{
     margin: 100px auto;
     width: 250px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px blue;
 }
 
 fieldset h1{
@@ -57,4 +61,3 @@ table{
     margin: auto;
     width: 80%;
 }   
-

@@ -20,11 +20,11 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td><input type="text" name="usuario" id="usuario" placeholder="Usuário"></td>
+                            <td><input type="text" name="usuario" id="usuario" placeholder="Usuário" maxlength="30"></td>
                         </tr>
 
                         <tr>
-                            <td><input type="password" name="senha" id="senha" placeholder="Senha"></td>
+                            <td><input type="password" name="senha" id="senha" placeholder="Senha" maxlength="30"></td>
                         </tr>
 
                         <tr>

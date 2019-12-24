@@ -20,12 +20,12 @@
                     <tbody>
                         <tr>
                             <td><label for="usuario">Usuário:</label></td>
-                            <td><input type="text" name="usuario" id="usuario"></td>
+                            <td><input type="text" name="usuario" id="usuario" maxlength="30"></td>
                         </tr>
 
                         <tr>
                             <td><label for="senha">Senha:</label></td>
-                            <td><input type="password" name="senha" id="senha"></td>
+                            <td><input type="password" name="senha" id="senha" maxlength="30"></td>
                         </tr>
 
                         <tr>

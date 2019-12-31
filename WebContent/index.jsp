@@ -13,24 +13,16 @@
 </head>
 <body>
 <header class="cabecalho">
-           <h1>Bem vindo ao nosso sistema JSP</h1>
-       </header>
-
-       <div id="main">
-           <section class="sessao-01">
-               <nav>
-                   <ul>
-                       <li><a href="cadastrar-contato.jsp">Cadastrar contato</a></li>
-                       <li><a href="ContatoServlet.do?acao=listartodos">Listagem de contato</a></li>
-                       <li><a href="deslogar.jsp">Deslogar</a></li>
-                   </ul>
-               </nav>
-           </section>
-
-           <section class="sessao-02">
-               <article>
-                   <header>
-                       <h2><%Login login = (Login)session.getAttribute("login");
+           <h1 class="cabecalho-titulo">Bem vindo ao nosso sistema JSP</h1>
+             <nav class="nav-agenda">
+                 <ul>
+                    <li><a href="cadastrar-contato.jsp">Cadastrar contato</a></li>
+                    <li><a href="ContatoServlet.do?acao=listartodos">Listagem de contato</a></li>
+                    <li><a href="deslogar.jsp">Deslogar</a></li>
+                </ul>
+            </nav>
+            
+            <h2><%Login login = (Login)session.getAttribute("login");
 							if(login == null){
 								response.sendRedirect("login.jsp");
 							}
@@ -38,14 +30,9 @@
 								out.print("Bem vindo, "+login.getUsuario()+"<br/>");
 							}
 						%></h2>
-                   </header>
-
-                <div class="conteudo">
-                    <p>Sistema web desenvolvido por Gabriel Ferreira</p>
-                </div>
-              </article>
-           </section>
-       </div>
+        
+       
+     </header>
 
 </body>
 </html>

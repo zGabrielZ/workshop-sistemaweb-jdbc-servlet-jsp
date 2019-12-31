@@ -1,63 +1,40 @@
 @charset "ISO-8859-1";
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    background-color: black;
 }
 
 .cabecalho{
-    background-color: black;
-    border-top: 1px solid transparent;
-    padding: 40px;
+    width: 80%;
+    margin: auto;
 }
 
-.cabecalho h1{
-    width: 50%;
-    margin: auto;
+.cabecalho p{
+    color: white;
+}
+
+.cabecalho-titulo,h2{
+    margin: 50px auto;
     text-align: center;
     color: white;
     text-shadow: 3px 3px 2px red; 
 }
 
-#main{
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-agenda{
+    text-align: center;
+    width: 35%;
     margin: auto;
-    background-color: white;
-    border-top: 1px solid transparent;
-    height: 520px;
 }
 
-.sessao-01{
-    width: 20%;
-    background-color: black;
-    margin: 0 0 0 0;
-    position: relative;
-    height: 520px;   
-    border-top: 1px solid transparent; 
-}
-
-.sessao-02{
-    position: absolute;
-    background-color: black;
-    top: 150px;
-    right: 30px;
-    left: 300px;
-    height: 400px;
-    color: white;
-}
-.sessao-02 h2,p{
-    margin-left: 10px;
-}
-
-nav ul li {
-    display: block;
+.nav-agenda ul li {
     list-style: none;
     border: 1px solid white;
     margin-bottom: 20px;
-}
-
-nav ul{
-    text-align: left;
-    width: 50%;
-    margin: 10px 10px auto;
 }
 
 nav a{
@@ -73,3 +50,4 @@ nav a{
   nav a:hover {
     background: rgba(0, 0, 0,0.5);
   }
+

@@ -11,7 +11,7 @@ create table contato(
 idContato int not null auto_increment,
 nomeContato varchar(30) not null,
 sobrenomeContato varchar(30) not null,
-telefoneContato int not null,
+telefoneContato varchar(30) not null,
 emailContato varchar(30) not null,
 primary key (idContato)
 );

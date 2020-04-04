@@ -9,12 +9,12 @@ public class Contato implements Serializable {
 	private Integer id;
 	private String nome;
 	private String sobrenome;
-	private Integer telefone;
+	private String telefone;
 	private String email;
 	
 	public Contato() {}
 
-	public Contato(Integer id, String nome, String sobrenome, Integer telefone, String email) {
+	public Contato(Integer id, String nome, String sobrenome, String telefone, String email) {
 		this.id = id;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
@@ -46,11 +46,11 @@ public class Contato implements Serializable {
 		this.sobrenome = sobrenome;
 	}
 
-	public Integer getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(Integer telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 

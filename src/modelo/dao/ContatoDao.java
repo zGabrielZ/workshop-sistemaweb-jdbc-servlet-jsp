@@ -11,7 +11,7 @@ public interface ContatoDao {
 	void deletar(Integer id);
 	List<Contato> encontrarTudo();
 	List<Contato> encontrarPeloNome(String nome);
-	boolean checarTelefone(Integer telefone);
-	boolean checarTelefoneAtualizado(Integer telefone,Integer id);
+	boolean checarTelefone(String telefone);
+	boolean checarTelefoneAtualizado(String telefone,Integer id);
 	Contato encontrarPeloId(Integer id);
 }

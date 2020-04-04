@@ -12,6 +12,8 @@
 <meta name="description" content="projeto web">
 <meta name="keywords" content="html5,jsp,servlet,java,jdbc">
 <link rel="stylesheet" href="paginas/css/estilo-cadastro-contato.css" >
+<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.mask.min.js"></script>
 </head>
 <body>
 	 <div id="contato">
@@ -38,7 +40,7 @@
 
                             <tr>
                                 <td><label for="telefone">Telefone:</label></td>
-                                <td><input maxlength="10" type="text" name="telefone" id="telefone" value='<c:out value="${contato.telefone}"></c:out>'></td>
+                                <td><input type="text" name="telefone" id="telefone" value='<c:out value="${contato.telefone}"></c:out>'></td>
                             </tr>
 
                             <tr>
@@ -59,5 +61,14 @@
         <div class="aviso">
             <h2>${msg}</h2> 
         </div>
+        
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$("#telefone").mask("(00) 0000-0000")
+        	})
+        </script>
+        
+        
+        
 </body>
 </html>

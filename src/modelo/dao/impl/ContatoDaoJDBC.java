@@ -31,7 +31,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 					Statement.RETURN_GENERATED_KEYS);
 			st.setString(1,contato.getNome());
 			st.setString(2,contato.getSobrenome());
-			st.setInt(3,contato.getTelefone());
+			st.setString(3,contato.getTelefone());
 			st.setString(4,contato.getEmail());
 			
 			int linhasAfetadas = st.executeUpdate();
@@ -62,7 +62,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 					+ "WHERE idContato = ?");
 			st.setString(1,contato.getNome());
 			st.setString(2,contato.getSobrenome());
-			st.setInt(3,contato.getTelefone());
+			st.setString(3,contato.getTelefone());
 			st.setString(4,contato.getEmail());
 			st.setInt(5,contato.getId());
 			
@@ -142,7 +142,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 	}
 
 	@Override
-	public boolean checarTelefone(Integer telefone) {
+	public boolean checarTelefone(String telefone) {
 		PreparedStatement st = null;
 		ResultSet rs = null;
 		boolean check = false;
@@ -150,7 +150,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 		try {
 			st = conn.prepareStatement("SELECT * FROM contato WHERE telefoneContato = ?");
 			
-			st.setInt(1,telefone);
+			st.setString(1,telefone);
 			
 			rs = st.executeQuery();
 			
@@ -170,7 +170,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 		contato.setId(rs.getInt("idContato"));
 		contato.setNome(rs.getString("nomeContato"));
 		contato.setSobrenome(rs.getString("sobrenomeContato"));
-		contato.setTelefone(rs.getInt("telefoneContato"));
+		contato.setTelefone(rs.getString("telefoneContato"));
 		contato.setEmail(rs.getString("emailContato"));
 		return contato;
 	}
@@ -191,7 +191,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 				contato.setId(rs.getInt("idContato"));
 				contato.setNome(rs.getString("nomeContato"));
 				contato.setSobrenome(rs.getString("sobrenomeContato"));
-				contato.setTelefone(rs.getInt("telefoneContato"));
+				contato.setTelefone(rs.getString("telefoneContato"));
 				contato.setEmail(rs.getString("emailContato"));
 			}
 			
@@ -205,7 +205,7 @@ public class ContatoDaoJDBC implements ContatoDao {
 	}
 
 	@Override
-	public boolean checarTelefoneAtualizado(Integer telefone,Integer id) {
+	public boolean checarTelefoneAtualizado(String telefone,Integer id) {
 		
 		PreparedStatement st = null;
 		ResultSet rs = null;

@@ -123,7 +123,7 @@ public class ContatoServlet extends HttpServlet {
 		
 		contato.setNome(nome);
 		contato.setSobrenome(sobrenome);
-		contato.setTelefone(Utils.converterParaInt(telefone));
+		contato.setTelefone(telefone);
 		contato.setEmail(email);	
 		
 		if(nome.equals("") || nome == null) {
@@ -138,10 +138,8 @@ public class ContatoServlet extends HttpServlet {
 		if(email.equals("") || email == null) {
 			throw new Validation("Campo email não pode ser vazio");
 		}
-		if(!telefone.isEmpty() || telefone != null) {
-			if(Utils.verificarNumero(telefone) == false) {
-				throw new Validation("Campo telefone tem que ser digitado em números");
-			}
+		if(telefone.isEmpty() || telefone == null) {
+			throw new Validation("Campo telefone não pode ser vazio");
 		}
 		
 		return contato;
